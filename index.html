@@ -13,6 +13,7 @@
 
       document.getElementById("image").hidden = true;
 
+
       // Get today's date and time
       var now = new Date().getTime();
         
@@ -35,9 +36,11 @@
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "Happy Birthday Pooji";
+        document.getElementById("demo").innerHTML = "Happy Birthday To You....Pooji";
         document.getElementById("countdown").hidden = true;
         document.getElementById("image").hidden = false;
+        document.getElementById("audio").hidden = false;
+
 
         
       }
@@ -72,12 +75,18 @@
     </div>
     <div id="image">
         <img src="HBD1.png" alt="" style="
-        width: 100%;
-        height: auto;top:10%;">
+        width: 1262px;
+        height: 614px;">
         <audio autoplay>
-          <source src="audio.mpeg" type="audio/mpeg" >
-       </audio>
+          <source src="audio.mpeg" type="audio/mpeg">
+        </audio>
     </div>
+    <div id="audio">
+      <audio autoplay>
+        <source src="audio.mpeg" type="audio/mpeg">
+      </audio>
+    </div>
+    
     
   </body>
 
